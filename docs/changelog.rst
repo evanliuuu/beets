@@ -53,6 +53,10 @@ Bug fixes
   artwork from the iTunes Store instead of deprecated ``100000x100000-999``,
   fixing an issue where Apple's CDN rejected image requests with HTTP 400 Bad
   Request.
+- :doc:`plugins/hook`: Keep backslashes intact when splitting hook commands on
+  Windows, where they separate path components rather than escape the next
+  character, so that commands taking an absolute path now receive it in one
+  piece.
 
 ..
     For plugin developers

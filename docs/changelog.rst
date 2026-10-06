@@ -20,6 +20,9 @@ New features
 - :doc:`plugins/lastgenre`: Improve original-genre fallback by applying aliases
   before whitelist filtering, while preserving existing genres regardless of the
   configured count. :bug:`6890`
+- The ``-c``/``--config`` command-line option can now be given more than once.
+  Each file is overlaid on top of the previous ones, so a configuration can be
+  composed from several files in a single run.
 
 Bug fixes
 ~~~~~~~~~
